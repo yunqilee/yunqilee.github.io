@@ -31,9 +31,11 @@ county_hover = alt.selection_single(
 ## Write up: first plot
 Compared with last week's visualization, this visualization has increased interactivity. The audience can more intuitively view the mean square footage of a certain county. The color changes also make it easier to compare the selected data to other data.
 
-## From the vega-editor
 
-Simple barplot specification:
+
+According to the first visualization, you can further analyze the building information of the county in the top 30 mean square footages and view the distribution of Year Acquired and Square Footage.
+
+
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/firstViz_take2.json" style="width: 100%"></vegachart>
 
