@@ -13,6 +13,7 @@ custom_js:
 
 # Interactive visualizations of building inventory data
 
+## First Plot
 The interactivity of this visualization is mainly reflected in hovering the mouse over a column chart of a county. The column chart will change color and display specific data. The code to implement this interactivity is as follows:
 
 ```
@@ -33,27 +34,24 @@ Compared with last week's visualization, this visualization has increased intera
 
 
 
-According to the first visualization, you can further analyze the building information of the county in the top 30 mean square footages and view the distribution of Year Acquired and Square Footage.
+## Second Plot
+According to the first visualization, we can further analyze the building information of the county in the top 30 mean square footages and view the distribution of Year Acquired and Square Footage.
 
 
-
-<vegachart schema-url="{{ site.baseurl }}/assets/json/firstViz_take2.json" style="width: 100%"></vegachart>
-
-
-
-## Search The Data & Methods
-
-Below is where we can put some links to both the data and the analysis code as buttons:
+The code to achieve interactivity is as follows. In the Year Acquired and Square Footage charts of the county in the top 30 mean square footage, the add_selection and transform_filter methods are used respectively.
 
 ```
-<div class="left">
-{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
-</div>
-
-<div class="right">
-{% include elements/button.html link="https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html" text="The Analysis" %}
-</div>
+brush = alt.selection_interval(encodings=['x','y'])
 ```
+
+
+
+<vegachart schema-url="{{ site.baseurl }}/assets/json/interactive_chart.json" style="width: 100%"></vegachart>
+
+
+## Write up: second plot
+
+Since the scatter plot display effect last week was not good, I used the example in class for the second plot this week. By further analyzing the results of the first visualization, an interactive visualization design was performed on the filtered data through pandas.
 
 <!-- these are written in a combo of html and liquid --> 
 
