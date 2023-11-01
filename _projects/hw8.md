@@ -30,7 +30,7 @@ county_hover = alt.selection_single(
 
 
 ## Write up: first plot
-Compared with last week's visualization, this visualization has increased interactivity. The audience can more intuitively view the mean square footage of a certain county. The color changes also make it easier to compare the selected data to other data.
+Compared with last week's visualization, this visualization has increased interactivity. Regarding the encoding type, I use nominal for the x-axis and quantitative for the y-axis. When a county is selected, the column will change from blue to red. The audience can more intuitively view the mean square footage of it. The color changes also make it easier to compare the selected data to other data.
 
 
 
@@ -51,7 +51,7 @@ brush = alt.selection_interval(encodings=['x','y'])
 
 ## Write up: second plot
 
-Since the scatter plot display effect last week was not good, I used the example in class for the second plot this week. By further analyzing the results of the first visualization, an interactive visualization design was performed on the filtered data through pandas.
+Since the scatter plot display effect last week was not good, I used the example in class for the second plot this week. Similar to the in-class example, The chart on the left uses quantitative for the x-axis and nominal for the y-axis. The color is displayed according to the distribution of the number of buildings. The chart on the right shows a histogram of the selected area on the left based on the distribution of square footage. By further analyzing the results of the first visualization, an interactive visualization design was performed on the filtered data through pandas.
 
 <!-- these are written in a combo of html and liquid --> 
 
