@@ -4,6 +4,8 @@
   {% assign description = page.description | default: site.description | strip_html | strip_newlines | truncate: 160 %}
   {% assign image = page.image | default: site.author.image %}
 
+  {% include google-analytics.html %}
+
   {% if page.name and page.collection == 'projects' %}
     {% assign title = page.name | escape %}
   {% endif %}
