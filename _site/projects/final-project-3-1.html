@@ -32,12 +32,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Projects">
-  <meta property="og:description" content="I am definitely not a corgi!">
-  <meta property="og:image" content="https://i0.wp.com/www.threecorgis.com///wp-content/uploads/2014/09/three_corgis618-1-1.jpg">
+  <meta property="og:title" content="final project 3.1">
+  <meta property="og:description" content="Final project 3.1 for interactive viz!">
+  <meta property="og:image" content="assets/pngs/interactive_legends.png">
 
-  <title>Projects</title>
-  <meta name="description" content="I am definitely not a corgi!">
+  <title>final project 3.1</title>
+  <meta name="description" content="Final project 3.1 for interactive viz!">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -83,63 +83,27 @@
   </div>
 
 </nav>
-    <div class="card-columns m-3 mt-5">
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="interactive-visualizations-of-building-inventory-data">Interactive visualizations of building inventory data</h1>
 
-  <!-- Local Projects -->
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/1-vega-lite-project" class="project card text-themed"><img id="vega-lite-example-project-img" class="card-img-top" src="/assets/pngs/cars.png" alt="Vega Lite Example Project" /><div class="card-body">
-      <h5 id="vega-lite-example-project-name" class="card-title">Vega Lite Example Project
-      </h5>
-      <p id="vega-lite-example-project-desc" class="card-text">This is a "showcase" project that uses vega-lite for interactive viz!</p>
-      <p id="vega-lite-example-project-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">HTML</span><span class="badge badge-pill text-primary border border-primary ml-1">vega-lite</span></p>
-    </div>
-  </a>
+<h2 id="first-plot">First Plot</h2>
+<p>The interactivity of this visualization is mainly reflected in hovering the mouse over a column chart of a county. The column chart will change color and display specific data. The code to implement this interactivity is as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>county_hover = alt.selection_single(
+    name="countyHover",
+    on="mouseover",
+    nearest=True,
+    empty="none",
+    fields=["County"]
+)
+</code></pre></div></div>
+
+<vegachart schema-url="/assets/json/mean_square_footage.json" style="width: 100%"></vegachart>
+
+<h2 id="write-up-first-plot">Write up: first plot</h2>
+<p>Compared with last week’s visualization, this visualization has increased interactivity. Regarding the encoding type, I use nominal for the x-axis and quantitative for the y-axis. When a county is selected, the column will change from blue to red. The audience can more intuitively view the mean square footage of it. The color changes also make it easier to compare the selected data to other data.</p>
+
 </div>
-
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/final-project-3-1" class="project card text-themed"><img id="final-project-3-1-img" class="card-img-top" src="/assets/pngs/interactive_legends.png" alt="final project 3.1" /><div class="card-body">
-      <h5 id="final-project-3-1-name" class="card-title">final project 3.1
-      </h5>
-      <p id="final-project-3-1-desc" class="card-text">Final project 3.1 for interactive viz!</p>
-      <p id="final-project-3-1-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Altair</span><span class="badge badge-pill text-primary border border-primary ml-1">Interactive visualization</span><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">Javascript</span></p>
-    </div>
-  </a>
-</div>
-
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/hw8" class="project card text-themed"><img id="hw8-jekyll-webpage-img" class="card-img-top" src="/assets/pngs/mean_square_footage.png" alt="hw8: Jekyll Webpage" /><div class="card-body">
-      <h5 id="hw8-jekyll-webpage-name" class="card-title">hw8: Jekyll Webpage
-      </h5>
-      <p id="hw8-jekyll-webpage-desc" class="card-text">This is a "showcase" project that uses vega-lite for interactive viz!</p>
-      <p id="hw8-jekyll-webpage-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">HTML</span><span class="badge badge-pill text-primary border border-primary ml-1">vega-lite</span></p>
-    </div>
-  </a>
-</div>
-
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/wk10" class="project card text-themed"><img id="wk10-notebook-img" class="card-img-top" src="/assets/pngs/interactive_legends.png" alt="wk10 notebook" /><div class="card-body">
-      <h5 id="wk10-notebook-name" class="card-title">wk10 notebook
-      </h5>
-      <p id="wk10-notebook-desc" class="card-text">This is a "showcase" project that uses vega-lite for interactive viz!</p>
-      <p id="wk10-notebook-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">HTML</span><span class="badge badge-pill text-primary border border-primary ml-1">vega-lite</span></p>
-    </div>
-  </a>
-</div>
-
-  
-
-
-
-
-  <!-- Remote Projects -->
-  
-
-  
-
-  
-</div>
-
-
   </main>
   <footer class="mt-auto py-3 text-center">
 
@@ -182,6 +146,17 @@
 
 </footer>
 
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
 
 
 
