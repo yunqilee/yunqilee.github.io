@@ -84,24 +84,37 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1 id="interactive-visualizations-of-building-inventory-data">Interactive visualizations of building inventory data</h1>
+  <h1 id="final-project-31-of-group-4-xj20-yuhanwu3-yunqi4">Final Project 3.1 of Group 4 (xj20, yuhanwu3, yunqi4)</h1>
 
-<h2 id="first-plot">First Plot</h2>
-<p>The interactivity of this visualization is mainly reflected in hovering the mouse over a column chart of a county. The column chart will change color and display specific data. The code to implement this interactivity is as follows:</p>
+<h2 id="interactive-visualization">Interactive visualization</h2>
+<p>In the third part of the project, our group wants to explore electricity use by different property types. We first used heatmap to analyze the mean electricity use of different types of buildings for the year of construction. The code is as follows:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>county_hover = alt.selection_single(
-    name="countyHover",
-    on="mouseover",
-    nearest=True,
-    empty="none",
-    fields=["County"]
-)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chart1 = alt.Chart(filtered_df).mark_rect().encode(
+    alt.X('Year Built:O'),
+    alt.Y('Primary Property Type:O'),
+    alt.Color('Electricity Use (kBtu):Q', aggregate='mean',title='Mean Electricity Use(kBtu)')
+).properties(width=400, height=200, title='Heatmap of Electricity Use by Property Type and Year'
+            ).transform_filter(year).add_selection(brush, year)
 </code></pre></div></div>
 
-<vegachart schema-url="/assets/json/mean_square_footage.json" style="width: 100%"></vegachart>
+<p>Then, to provide a comprehensive snapshot of the building’s energy performance, our group added a histogram of mean energy star scores for different types of buildings. The code is as follows:</p>
 
-<h2 id="write-up-first-plot">Write up: first plot</h2>
-<p>Compared with last week’s visualization, this visualization has increased interactivity. Regarding the encoding type, I use nominal for the x-axis and quantitative for the y-axis. When a county is selected, the column will change from blue to red. The audience can more intuitively view the mean square footage of it. The color changes also make it easier to compare the selected data to other data.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chart2 = alt.Chart(filtered_df).mark_bar().encode(
+    alt.X('Primary Property Type:O'),
+    alt.Y('ENERGY STAR Score:Q',aggregate='mean',title='Mean ENERGY STAR Score'),
+    alt.Color('ENERGY STAR Score:Q',aggregate='mean',title='Mean ENERGY STAR Score')
+).properties(width=300,title='Mean ENERGY STAR Score by Property Type'
+            ).transform_filter(brush).transform_filter(year)
+</code></pre></div></div>
+
+<p>In order to help the audience more intuitively see the energy usage of buildings built in a specific year, our team added a dropdown widget through which users can select a specific year and see the corresponding data.</p>
+
+<vegachart schema-url="/assets/json/side_by_side_data_url.json" style="width: 100%"></vegachart>
+
+<h2 id="write-up-interactive-visualization">Write up: interactive visualization</h2>
+<p>By using the HConcatChart method provided by the altair library, we concat the two charts together. Interactive visualization completed successfully.</p>
+
+<p><img src="/assets/pngs/1_ReportingRate.png" /></p>
 
 </div>
   </main>
