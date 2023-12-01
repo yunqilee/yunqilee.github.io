@@ -50,34 +50,35 @@ We complete the contextual visualizations, which includes two parts-'Overall Ene
 Source: <a href="https://www.chicago.gov/content/dam/city/progs/env/Energy-Benchmark-Reports/2020_Chicago_Energy_Benchmarking_Report.pdf">2020 Chicago Energy Benchmarking Report</a>
 
 ### overall energy performance
-<img src="{{site.baseurl}}/assets/pngs/1_ReportingRate.png">
-
-Figure 1 displays the Energy Benchmarking Reporting Rate from 2016 to 2020.
-
-In 2020, 2,841 properties submitted reports to the City of Chicago, and 80 additional properties submitted on a voluntary basis, for a total of 2,921 reports. 118 properties received temporary exemptions, leading to 2,959 “covered properties” (required by ordinance to report) reporting or exempt out of 3,491 total, resulting in a 85% reporting rate.
-
-In 2016, 2,695 properties spanning nearly threefourths of a billion square feet tracked and reported energy use. Over 3,500 properties are now included in the policy’s coverage. The reporting properties represent 23% of citywide energy use.
 
 <img src="{{site.baseurl}}/assets/pngs/2_EnergyStar.png">
 
-Figure 2 displays the Median ENERGY STAR Scores from 2016 to 2020.
+This figure displays the Median ENERGY STAR Scores from 2016 to 2020.
 
 The 1-100 ENERGY STAR score represents a property’s overall energy performance relative to similar building types across the nation, while normalizing for different climates. A score of 50 indicates energy performance at the national median, while a score of 100 represents extremely high energy performance. Scores below 50 indicate significant opportunities for improvement.
 
 In 2020, the median ENERGY STAR score for all analyzed properties in Chicago was 60 out of 100, an increase of three points from the median of 57 in 2019. 
 
 <img src="{{site.baseurl}}/assets/pngs/3_StarByBuilding.png">
-Figure 3 displays ENERGY STAR Scores by Building Sector Reported from 2016 to 2020.
+This Figure displays ENERGY STAR Scores by Building Sector Reported from 2016 to 2020.
 
 The median ENERGY STAR score has increased in the Retail, Office, and K-12 School property sectors, while the Multifamily Housing, Lodging, Other, and Healthcare sectors saw declines from 2019 to 2020. A median score of 60 is well above the national median of 50, indicating the Chicago properties over 50,000 square feet are performing slightly better than the majority of comparable buildings in the U.S.
 
 ### trend analysis
 <img src="{{site.baseurl}}/assets/pngs/4_GHG.png">
-Figure 4 display the trend of Median GHG Intensity from 2016 to 2020.
+This figure display the trend of Median GHG Intensity from 2016 to 2020.
 
 Overall, the carbon emissions per sq. ft. of space continued to decline rapidly and decreased by 25% from 2016 to 2020. All building sectors have seen decreases in the GHG intensity as shown in this figure. When comparing total GHG emissions from nearly 2,000 properties that reported in 2017 and again reported in 2020, total GHG emissions are down 9%, which equates to over 200,000 metric tons of carbon dioxide equivalents (CO2e). This reduction is equivalent to removing nearly 55,000 passenger cars from the road each year.
 
 <img src="{{site.baseurl}}/assets/pngs/5_EUI.png">
-Figure 5 display the trend of Median Source EUI from 2016 to 2020.
+This figure display the trend of Median Source EUI from 2016 to 2020.
 
 Now, the final figure demonstrate the comparison over the past five years of benchmarking information shows that the median weather-normalized source energy use per sq. ft. for all reporting buildings has dropped by 7% from the 2016 to 2020 reporting years. All sectors saw decreases since the 2016 reporting year, with the exception of Retail and College/ University. The greatest improvements have been seen in the Lodging sector (18% improvement) and Office sector (15% improvement).
+
+<div class="left">
+{% include elements/button.html link="https://raw.githubusercontent.com/YuhanWu99/YuhanWu99.github.io/main/_data/Chicago_Energy_Benchmarking_-_2016_Data_Reported_in_2017.csv" text="The Data" %}
+</div>
+
+<div class="right">
+{% include elements/button.html link="https://github.com/yunqilee/yunqilee.github.io/blob/main/python_notebooks/hw8-notebook.ipynb" text="The Analysis" %}
+</div>
