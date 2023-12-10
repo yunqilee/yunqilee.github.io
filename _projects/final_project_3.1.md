@@ -53,25 +53,26 @@ Source: <a href="https://www.chicago.gov/content/dam/city/progs/env/Energy-Bench
 
 <img src="{{site.baseurl}}/assets/pngs/2_EnergyStar.png">
 
-This figure displays the Median ENERGY STAR Scores from 2016 to 2020.
+<center>Fig 1: Median ENERGY STAR Scores from 2016 to 2020.</center>
 
 The 1-100 ENERGY STAR score represents a property’s overall energy performance relative to similar building types across the nation, while normalizing for different climates. A score of 50 indicates energy performance at the national median, while a score of 100 represents extremely high energy performance. Scores below 50 indicate significant opportunities for improvement.
 
 In 2020, the median ENERGY STAR score for all analyzed properties in Chicago was 60 out of 100, an increase of three points from the median of 57 in 2019. 
 
 <img src="{{site.baseurl}}/assets/pngs/3_StarByBuilding.png">
-This Figure displays ENERGY STAR Scores by Building Sector Reported from 2016 to 2020.
+
+<center>Fig 2: ENERGY STAR Scores by Building Sector Reported from 2016 to 2020.</center>
 
 The median ENERGY STAR score has increased in the Retail, Office, and K-12 School property sectors, while the Multifamily Housing, Lodging, Other, and Healthcare sectors saw declines from 2019 to 2020. A median score of 60 is well above the national median of 50, indicating the Chicago properties over 50,000 square feet are performing slightly better than the majority of comparable buildings in the U.S.
 
 ### trend analysis
 <img src="{{site.baseurl}}/assets/pngs/4_GHG.png">
-This figure display the trend of Median GHG Intensity from 2016 to 2020.
+<center>Fig 3: the trend of Median GHG Intensity from 2016 to 2020.</center>
 
 Overall, the carbon emissions per sq. ft. of space continued to decline rapidly and decreased by 25% from 2016 to 2020. All building sectors have seen decreases in the GHG intensity as shown in this figure. When comparing total GHG emissions from nearly 2,000 properties that reported in 2017 and again reported in 2020, total GHG emissions are down 9%, which equates to over 200,000 metric tons of carbon dioxide equivalents (CO2e). This reduction is equivalent to removing nearly 55,000 passenger cars from the road each year.
 
 <img src="{{site.baseurl}}/assets/pngs/5_EUI.png">
-This figure display the trend of Median Source EUI from 2016 to 2020.
+<center>Fig 4: the trend of Median Source EUI from 2016 to 2020.</center>
 
 Now, the final figure demonstrate the comparison over the past five years of benchmarking information shows that the median weather-normalized source energy use per sq. ft. for all reporting buildings has dropped by 7% from the 2016 to 2020 reporting years. All sectors saw decreases since the 2016 reporting year, with the exception of Retail and College/ University. The greatest improvements have been seen in the Lodging sector (18% improvement) and Office sector (15% improvement).
 
