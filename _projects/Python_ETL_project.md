@@ -28,7 +28,7 @@ In the extract stage, two types of data are processed. They are the name of the 
 
 
 ## Data Processing
-In the transform stage, the transform function is defined to process the extracted data. Combined with the US dollar and pound exchange rates obtained in the extract stage, the data is converted to obtain market cap data in pounds sterling and loaded into the specified csv file. , and also used the log function to log the entire process of ETL.
+In the transform stage, the transform function is defined to process the extracted data. Combined with the US dollar and pound exchange rates obtained in the extract stage, the data is converted to obtain market cap data in pounds sterling and loaded into the specified csv file, also used the log function to log the entire process of ETL.
 
 <img src="{{site.baseurl}}/assets/pngs/completed ETL.png">
 
