@@ -1,5 +1,5 @@
 ---
-name: "hw8: Jekyll Webpage"
+name: "Jekyll Webpage"
 tools: [Python, HTML, vega-lite]
 image: assets/pngs/mean_square_footage.png
 description: This is a "showcase" project that uses vega-lite for interactive viz!

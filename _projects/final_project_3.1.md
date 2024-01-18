@@ -1,8 +1,8 @@
 ---
-name: final project 3.1
+name: Data Visualization of Chicago Building Energy Usage
 tools: [Altair, Interactive visualization, Python, Javascript]
 image: assets/pngs/final_project_3.1_cover.png
-description: Final project 3.1 for interactive viz!
+description: Project for interactive viz!
 custom_js:
   - vega.min
   - vega-lite.min
@@ -11,7 +11,7 @@ custom_js:
 ---
 
 
-# Final Project 3.1 of Group 4 (xj20, yuhanwu3, yunqi4)
+# Data Visualization of Chicago Building Energy Usage (xj20, yuhanwu3, yunqi4)
 
 ## Interactive visualization
 In the third part of the project, our group wants to explore electricity use by different property types. We first used heatmap to analyze the mean electricity use of different types of buildings for the year of construction. The code is as follows:
