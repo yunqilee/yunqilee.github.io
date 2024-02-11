@@ -5,9 +5,9 @@
 # NOTE: it looks like you need to rebuild + repush everytime you update this _config.yml file
 
 ### Site Settings ###
-title               : Yunqi Li's Projects 
+title               : Yunqi Li's Website 
 description         : >-
-                      I am definitely not a corgi!
+                      Tech & Anime Fusion
 baseurl             : ""   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly,
 #                                             otherwise will be hosted at <your-username>.github.io/{{base_url}}
 repository          : yunqilee                    # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects) -- for example, I would put "jnaiman" without the quotes after the ":" here
@@ -35,7 +35,7 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : A. P. Corgi
-  image             : https://i0.wp.com/www.threecorgis.com///wp-content/uploads/2014/09/three_corgis618-1-1.jpg
+  image             : /assets/pngs/jezael-melgoza-7H77FWkK_x4-unsplash.png
 #  behance           : your_username
 # dribbble          : your_username
   email             : yli380479@gmail.com
