@@ -7,8 +7,8 @@ weight: 3
 
 # **About Me**
 
-Hi I am **{{ site.author.name }}**,<br>
-possibly a corgi, most definitely not!  Either way there are really neat things I am up to!
+Hi I am **Yunqi Li**,<br>
+I am currently pursuing my <a href="https://ischool.illinois.edu/degrees-programs/graduate/ms-information-management">MSIM</a> degree in UIUC🌽. This is my personal website, I will post my learning experience and project here.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
