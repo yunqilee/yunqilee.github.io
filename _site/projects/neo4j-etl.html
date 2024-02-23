@@ -32,12 +32,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Analyze IMDB data via neo4j">
-  <meta property="og:description" content="An ETL Project using neo4j">
+  <meta property="og:title" content="Analyze IMDb data via Neo4j">
+  <meta property="og:description" content="An ETL Project using Neo4j">
   <meta property="og:image" content="assets/pngs/neo4j.png">
 
-  <title>Analyze IMDB data via neo4j</title>
-  <meta name="description" content="An ETL Project using neo4j">
+  <title>Analyze IMDb data via Neo4j</title>
+  <meta name="description" content="An ETL Project using Neo4j">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -84,18 +84,21 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1 id="analyze-imdb-data-via-neo4j">Analyze IMDB data via neo4j</h1>
+  <h1 id="analyze-imdb-data-via-neo4j">Analyze IMDb data via neo4j</h1>
 
-<h2 id="background-information">Background information</h2>
+<h3 id="background-information">Background information</h3>
+<p>IMDb is an online database of information related to a variety of media forms including films, television series, home videos and so on. This project aims to use the mature data of IMDb to better understand the characteristics of non-relational databases, as well as the actual work of data import and query using neo4j’s cypher shell.</p>
+<h3 id="data-cleaning">Data Cleaning</h3>
+<p>The data sources used for this project is given in the link below. Unfortunately, some of the tab-separated values are not compatible with Neo4j’s LOAD CSV command. Thanks to the contribution of ybull in Github, the <a href="https://github.com/ybull/IMDB-to-Neo4j-imports/tree/master"> repository</a> he created helped me fix the quote issue of the source data.</p>
 
-<h2 id="data-cleaning">Data Cleaning</h2>
+<p>By running the fix_quotes_for_neo4j_imports.py script, I can modify the form of the data to make them compatible with LOAD CSV command. Now the data is ready to import.</p>
 
-<h2 id="bulk-importing">Bulk importing</h2>
+<h3 id="realistic-query">Realistic query</h3>
 
-<h2 id="realistic-query">Realistic query</h2>
+<h3 id="write-up-from-data-source-to-insight-implemented-by-neo4j">Write up: From data source to insight, implemented by Neo4j</h3>
 
 <div class="left">
-<a class="m-1 btn btn-outline-primary btn-2 " href="https://datasets.imdbws.com/">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://developer.imdb.com/non-commercial-datasets/">
   The Data
 </a>
 </div>
