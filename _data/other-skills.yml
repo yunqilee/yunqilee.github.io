@@ -7,3 +7,8 @@
   percentage: 60
   level: Medium
   color: success
+
+- name: Java (Barista)
+  percentage: 40
+  level: Medium
+  color: 

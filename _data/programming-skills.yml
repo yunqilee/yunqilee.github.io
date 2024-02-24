@@ -4,11 +4,16 @@
   color: danger
 
 - name: Rust
-  percentage: 20
+  percentage: 30
   level: Beginner
   color:
 
 - name: Python
-  percentage: 80
+  percentage: 90
   level: Proficient
   color: secondary
+
+- name: Java
+  percentage: 60
+  level: Medium
+  color: info
