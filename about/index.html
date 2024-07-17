@@ -16,21 +16,31 @@
   <meta name="author" content="Yunqi Li">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Archives">
-<meta property="og:url" content="https://yunqi1121.com/archives/2024/index.html">
+    <meta name="description" content="Hi I am Yunqi Li,After got my undergrad degree in Beijing, I am currently pursuing my MSIM degree in UIUC🌽. I am interested in data related field, especially databases and how to visualize data in an">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About">
+<meta property="og:url" content="https://yunqi1121.com/about/index.html">
 <meta property="og:site_name" content="my_life.log">
+<meta property="og:description" content="Hi I am Yunqi Li,After got my undergrad degree in Beijing, I am currently pursuing my MSIM degree in UIUC🌽. I am interested in data related field, especially databases and how to visualize data in an">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-07-17T22:50:35.378Z">
+<meta property="article:modified_time" content="2024-07-17T22:50:35.378Z">
 <meta property="article:author" content="Yunqi Li">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Archives - my_life.log</title>
+  <title>About - my_life.log</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -186,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Archives"></span>
+            <span id="subtitle" data-typed-text="About"></span>
           
         </div>
 
@@ -208,26 +218,79 @@
         <div id="board"
           >
           
+            <div class="about-avatar">
+              <img src="/img/avatar.png" srcset="/img/loading.gif" lazyload class="img-fluid" alt="avatar">
+            </div>
+          
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">1 posts in total</p>
-  <hr>
-  
-  
-    
+<div class="text-center">
+  <div class="about-info">
+    <div class="about-name">Fluid</div>
+    <div class="about-intro">An elegant theme for Hexo</div>
+    <div class="about-icons">
       
-      <p class="h5">2024</p>
-    
-    <a href="/2024/07/15/hello-world/" class="list-group-item list-group-item-action">
-      <time>07-15</time>
-      <div class="list-group-item-title">Hello World</div>
-    </a>
-  
+        
+        
+        
+        <a href=https://github.com/yunqilee class="
+           hint--bottom hint--rounded"
+           aria-label=GitHub
+           target="_blank"
+        >
+          <i class="iconfont icon-github-fill" aria-hidden="true"></i>
+          
+        </a>
+      
+        
+        
+        
+        <a href=https://x.com/yunqi_uiuc class="
+           hint--bottom hint--rounded"
+           aria-label=Twitter
+           target="_blank"
+        >
+          <i class="iconfont icon-twitter-fill" aria-hidden="true"></i>
+          
+        </a>
+      
+    </div>
+  </div>
 </div>
+
+<article class="about-content page-content mt-5">
+  <div class="markdown-body">
+    <p>Hi I am <strong>Yunqi Li</strong>,<br><br>After got my undergrad degree in Beijing, I am currently pursuing my <a target="_blank" rel="noopener" href="https://ischool.illinois.edu/degrees-programs/graduate/ms-information-management">MSIM</a> degree in UIUC🌽. I am interested in data related field, especially databases and how to visualize data in an attractive way. Talk about life, I am a fan of jrpg and anime (not surprisingly😂), I also like making tasty coffee for myself, I think it is a good way to start a new day, it would be great if you can really <a target="_blank" rel="noopener" href="https://www.buymeacoffee.com/yunqi">buy me a coffee</a>. Feel free to contact me via email or X if you have same interests, I am looking forward to have a conversation with you.</p>
+
+  </div>
+
+  
+</article>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
 
 
 
@@ -331,6 +394,59 @@
 
 
 
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 
